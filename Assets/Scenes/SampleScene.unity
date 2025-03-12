@@ -338,7 +338,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 103073131}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1882176769}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &103073131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -523,7 +535,7 @@ GameObject:
   - component: {fileID: 237721782}
   - component: {fileID: 237721781}
   m_Layer: 5
-  m_Name: VolumePanel
+  m_Name: SliderPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1766,7 +1778,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1047608605}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1882176769}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1047608605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1989,7 +2013,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.531
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2299,7 +2323,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.431
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2426,7 +2450,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.458
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2513,7 +2537,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1172506560}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1882176769}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1172506560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3059,7 +3095,7 @@ GameObject:
   - component: {fileID: 1593495629}
   - component: {fileID: 1593495628}
   m_Layer: 5
-  m_Name: TracksPanel
+  m_Name: ButtonsPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3404,10 +3440,6 @@ MonoBehaviour:
   _masterVolume: {fileID: 1047674553}
   _sfxVolume: {fileID: 1091899293}
   _musicVolume: {fileID: 1138767173}
-  _sounds:
-  - {fileID: 103073130}
-  - {fileID: 1172506559}
-  - {fileID: 1047608604}
   _masterSound: {fileID: 1065948565}
 --- !u!4 &1882176770
 Transform:
