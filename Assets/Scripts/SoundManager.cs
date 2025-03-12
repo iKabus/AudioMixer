@@ -12,32 +12,25 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private Slider _sfxVolume;
     [SerializeField] private Slider _musicVolume;
 
-    [SerializeField] private Button[] _sounds;
     [SerializeField] private Button _masterSound;
 
     private bool _isMasterSoundOn = true;
-    private bool[] _isSoundsOn;
 
     private void Start()
     {
-        _isSoundsOn = new bool[_soundEffects.Length];
-
-        for (int i = 0; i < _soundEffects.Length; i++)
-        {
-            _isSoundsOn[i] = true;
-        }
-
         _masterVolume.onValueChanged.AddListener(SetMasterVolume);
         _sfxVolume.onValueChanged.AddListener(SetSFXVolume);
         _musicVolume.onValueChanged.AddListener(SetMusicVolume);
 
-        for(int i = 0; i < _sounds.Length; i++)
-        {
-            int soundIndex = i;
-            _sounds[i].onClick.AddListener(() => ToggleSound(soundIndex));
-        }
-
         _masterSound.onClick.AddListener(ToggleMasterSound);
+    }
+
+    public void PlaySound(int index)
+    {
+        if (index >= 0 && index < _soundEffects.Length)
+        {
+            _soundEffects[index].Play();
+        }
     }
 
     private void SetMasterVolume(float volume)
@@ -55,23 +48,20 @@ public class SoundManager : MonoBehaviour
         _audioMixer.SetFloat("MusicVolume", Mathf.Log10(volume) * 20);
     }
 
-    private void ToggleSound(int index)
-    {
-        if (index >= 0 && index < _soundEffects.Length)
-        {
-            _isSoundsOn[index] = !_isSoundsOn[index];
-            _soundEffects[index].mute = !_isSoundsOn[index];
-        }
-
-        if (_isSoundsOn[index])
-        {
-            _soundEffects[index].Play();
-        }
-    }
-
     private void ToggleMasterSound()
     {
+        int maxValue = 0;
+        int minValue = -80;
+
         _isMasterSoundOn = !_isMasterSoundOn;
-        AudioListener.pause = !_isMasterSoundOn;
+
+        if (_isMasterSoundOn)
+        {
+            _audioMixer.SetFloat("MasterVolume", maxValue);
+        }
+        else
+        {
+            _audioMixer.SetFloat("MasterVolume", minValue);
+        }
     }
 }
