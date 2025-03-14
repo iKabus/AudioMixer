@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 103073131}
   - component: {fileID: 103073130}
   - component: {fileID: 103073133}
+  - component: {fileID: 103073134}
   m_Layer: 5
   m_Name: ButtonSound1
   m_TagString: Untagged
@@ -338,19 +339,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 103073131}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1882176769}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &103073131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,6 +475,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &103073134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103073128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06db1ba4756b6f0428365e6f0d6f3682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &135488363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1708,6 +1709,7 @@ GameObject:
   - component: {fileID: 1047608605}
   - component: {fileID: 1047608604}
   - component: {fileID: 1047608607}
+  - component: {fileID: 1047608608}
   m_Layer: 5
   m_Name: ButtonSound3
   m_TagString: Untagged
@@ -1778,19 +1780,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1047608605}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1882176769}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1047608605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1926,6 +1916,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1047608608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047608602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06db1ba4756b6f0428365e6f0d6f3682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1047674551
 GameObject:
   m_ObjectHideFlags: 0
@@ -1936,6 +1938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1047674552}
   - component: {fileID: 1047674553}
+  - component: {fileID: 1047674554}
   m_Layer: 5
   m_Name: SliderMasterVolume
   m_TagString: Untagged
@@ -2017,6 +2020,20 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1047674554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047674551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdc55419df9e1b42a50eec5f84b66da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioMixer: {fileID: 24100000, guid: f4be570b9904dde49a6d5bea4ce2b610, type: 2}
+  _parametrs: 0
 --- !u!1 &1065948563
 GameObject:
   m_ObjectHideFlags: 0
@@ -2030,6 +2047,7 @@ GameObject:
   - component: {fileID: 1065948566}
   - component: {fileID: 1065948565}
   - component: {fileID: 1065948568}
+  - component: {fileID: 1065948569}
   m_Layer: 5
   m_Name: ButtonMute
   m_TagString: Untagged
@@ -2236,6 +2254,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1065948569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065948563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da23ff9ad9ebcb47a8cbbb1f5598f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioMixer: {fileID: 24100000, guid: f4be570b9904dde49a6d5bea4ce2b610, type: 2}
 --- !u!1 &1091899291
 GameObject:
   m_ObjectHideFlags: 0
@@ -2246,6 +2277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1091899292}
   - component: {fileID: 1091899293}
+  - component: {fileID: 1091899294}
   m_Layer: 5
   m_Name: SliderButtonVolume
   m_TagString: Untagged
@@ -2327,6 +2359,20 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1091899294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091899291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdc55419df9e1b42a50eec5f84b66da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioMixer: {fileID: 24100000, guid: f4be570b9904dde49a6d5bea4ce2b610, type: 2}
+  _parametrs: 1
 --- !u!1 &1121485640
 GameObject:
   m_ObjectHideFlags: 0
@@ -2373,6 +2419,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1138767172}
   - component: {fileID: 1138767173}
+  - component: {fileID: 1138767174}
   m_Layer: 5
   m_Name: SliderMusicVolume
   m_TagString: Untagged
@@ -2454,6 +2501,20 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1138767174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138767171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdc55419df9e1b42a50eec5f84b66da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioMixer: {fileID: 24100000, guid: f4be570b9904dde49a6d5bea4ce2b610, type: 2}
+  _parametrs: 2
 --- !u!1 &1172506557
 GameObject:
   m_ObjectHideFlags: 0
@@ -2467,6 +2528,7 @@ GameObject:
   - component: {fileID: 1172506560}
   - component: {fileID: 1172506559}
   - component: {fileID: 1172506562}
+  - component: {fileID: 1172506563}
   m_Layer: 5
   m_Name: ButtonSound2
   m_TagString: Untagged
@@ -2537,19 +2599,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1172506560}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1882176769}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1172506560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2685,6 +2735,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1172506563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172506557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06db1ba4756b6f0428365e6f0d6f3682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1219434690
 GameObject:
   m_ObjectHideFlags: 0
@@ -3402,60 +3464,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1882176768
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1882176770}
-  - component: {fileID: 1882176769}
-  m_Layer: 0
-  m_Name: SoundManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1882176769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1882176768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a1c2c6c928b9e9468523c0bbf403417, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audioMixer: {fileID: 24100000, guid: f4be570b9904dde49a6d5bea4ce2b610, type: 2}
-  _soundEffects:
-  - {fileID: 103073133}
-  - {fileID: 1172506562}
-  - {fileID: 1047608607}
-  _backgroundMusic: {fileID: 1065948568}
-  _masterVolume: {fileID: 1047674553}
-  _sfxVolume: {fileID: 1091899293}
-  _musicVolume: {fileID: 1138767173}
-  _masterSound: {fileID: 1065948565}
---- !u!4 &1882176770
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1882176768}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.9212856, y: -0.6761714, z: 0.03622841}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2075256218
 GameObject:
   m_ObjectHideFlags: 0
@@ -3825,4 +3833,3 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 1727830375}
   - {fileID: 519492702}
-  - {fileID: 1882176770}
